@@ -59,3 +59,52 @@ else console.log(recommendation = "Пора на тренировку");
  */
 
 //---Практика 8
+/* const gradExam = prompt("Ведите оценку за экзамен");
+const numberProject = prompt("Ведите количество выполненых проэктов");
+function finalGrade(gradExam, numberProject) {
+if(gradExam> 90 || numberProject > 10) return("Ваша оценка: 100");
+if(gradExam> 75 || numberProject >= 5) return("Ваша оценка: 90");
+if(gradExam> 50 || numberProject >= 2) return("Ваша оценка: 75");
+else return("Ваша оценка: 0");
+}
+console.log(finalGrade(gradExam, numberProject)); */
+
+//---Практика 9
+/* function multiplying(arr){
+let result = arr.reduce((prev,current)=> prev*current);
+return result;
+}
+console.log(multiplying([1,2,3,4,5,6])); */
+
+//---Практика 10
+/* function checkName(arr){
+const unwantedNames = ["Дима", "Саша", "Ольга", "Никита"];
+return arr.filter(name=>!unwantedNames.includes(name));
+}
+console.log(checkName(['Никита', 'Саша', 'Анастасия', 'Дима', 'Саныч', 'Ольга'])); */
+
+//---Практика 11
+/* function substraction(arr1, arr2){
+let result
+return result = arr1.reduce((a,b)=> a * b) - arr2.reduce((a,b)=> a * b);
+}
+console.log(substraction([3, 2, 5], [1, 4, 4])); */
+
+//---Практика 12
+/* function between(a, b) {
+    let result =[a,];
+while(a < b){
+   ++a
+    result.push(a)
+}
+return result;
+}
+console.log(between(5,15)) */
+
+//---Практика 13
+/* function hexToDec(str) {
+    return parseInt(str, 16)
+}
+console.log(hexToDec('FF')) */
+
+//---Практика 14
