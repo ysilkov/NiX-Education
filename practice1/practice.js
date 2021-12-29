@@ -108,3 +108,12 @@ console.log(between(5,15)) */
 console.log(hexToDec('FF')) */
 
 //---Практика 14
+function remove(str, number){
+    str.split(" ");
+    let result =[];
+  for(let i = 0; i< str.length; i++){
+  if(str[i]!=="!")  result.push(str[i])
+   }
+   return result
+  }
+  console.log(remove("!!!Hi !!hi!!! !hi", 5))  
