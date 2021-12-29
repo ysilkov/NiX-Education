@@ -108,12 +108,35 @@ console.log(between(5,15)) */
 console.log(hexToDec('FF')) */
 
 //---Практика 14
-function remove(str, number){
-    str.split(" ");
-    let result =[];
-  for(let i = 0; i< str.length; i++){
-  if(str[i]!=="!")  result.push(str[i])
+/* /* function remove(str, number){
+    const sign = "!"
+    str.split(" ").map(item =>str + ());
+
+    /* let result =[];
+  for(let i = "!"; i < str.length ; i++){
+  if(i.length === number) result.push(i.length)
    }
    return result
+  } 
+  console.log(remove("!!!Hi !!hi!!! !hi", 5)) */
+
+  //---Практика 15
+/* function maxDiff(arr) {
+ arr.sort((a,b)=>a-b);
+ if(arr.length === 0||arr.length === 1) return 0;
+ const min = arr[0];
+ const max = arr[arr.length-1]
+ const result = max - min;
+ return result;
+}
+  console.log(maxDiff([1,-6])) */
+
+/* //---Практика 16
+function returnText(str, number){
+    const reg = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+    let arr = reg.split(" ");
+    return arr.filter((item)=>item.length > number);
   }
-  console.log(remove("!!!Hi !!hi!!! !hi", 5))  
+  console.log(returnText('Сегодня отличный день. С самого утра мы пойдем на озеро, купаться.', 5));
+   */
+  //---Практика 17
