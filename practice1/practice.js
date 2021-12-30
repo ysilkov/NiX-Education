@@ -149,12 +149,26 @@ else return false;
   console.log(divisibleByThree('88')) */
 
   //---Практика 18
-function spacey(arr){
+/* function spacey(arr){
     let result = []
+    while(arr.length > 0){
+        result.
 
-    for(let i= 0 ; i<arr.length; i++){
-result.push(arr[i]+ arr[i+1] + arr[i+2])
     }
-    return result 
+/* 
+    for(let i= 0 ; i<arr.length; i++){
+result.push(arr[i]+ arr[i+1] + arr[i+2]) */
+    
+/*     return result 
 }
-  console.log(spacey(['kevin', 'has','no','space']))
+  console.log(spacey(['kevin', 'has','no','space'])) */
+
+  //---Практика 19
+/* function evensAndOdds(number){
+    if(number%2 ===0) return number.toString(2);
+    else return number.toString(16);
+}
+  console.log(evensAndOdds(13)) */
+
+  //---Практика 20
+
