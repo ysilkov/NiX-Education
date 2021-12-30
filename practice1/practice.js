@@ -108,17 +108,16 @@ console.log(between(5,15)) */
 console.log(hexToDec('FF')) */
 
 //---Практика 14
-/* /* function remove(str, number){
-    const sign = "!"
-    str.split(" ").map(item =>str + ());
-
-    /* let result =[];
-  for(let i = "!"; i < str.length ; i++){
-  if(i.length === number) result.push(i.length)
-   }
-   return result
-  } 
-  console.log(remove("!!!Hi !!hi!!! !hi", 5)) */
+/* function remove(str, n) {
+    return str.replace(/!/g, function (item) {
+        if (n > 0) {
+            n--;
+            return '';
+        }
+        return item;
+    });
+}
+console.log( remove("!!!Hi !!hi!!! !hi", 5))  */
 
   //---Практика 15
 /* function maxDiff(arr) {
@@ -140,3 +139,22 @@ function returnText(str, number){
   console.log(returnText('Сегодня отличный день. С самого утра мы пойдем на озеро, купаться.', 5));
    */
   //---Практика 17
+/*   function divisibleByThree(str){
+      let arr = str.split("")
+      let summNumString = arr.reduce((a,b)=> a + b);
+if(Number.isInteger(summNumString/3))  return true;
+else return false;
+  }
+
+  console.log(divisibleByThree('88')) */
+
+  //---Практика 18
+function spacey(arr){
+    let result = []
+
+    for(let i= 0 ; i<arr.length; i++){
+result.push(arr[i]+ arr[i+1] + arr[i+2])
+    }
+    return result 
+}
+  console.log(spacey(['kevin', 'has','no','space']))
