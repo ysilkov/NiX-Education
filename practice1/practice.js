@@ -41,7 +41,7 @@ else alert("числа одинаковые"); */
 
 //---Практика 6
 /* arr = [10, 20, 30, 50, 235, 3000];
-let result =[];
+const result =[];
 for(let i=0; i < arr.length; i++){
 if(arr[i].toString()[0] === "1") result.push(arr[i].toString());
 if(arr[i].toString()[0] === "2") result.push(arr[i].toString());
@@ -52,7 +52,7 @@ console.log(result.map(Number)); */
 
 //---Практика 7
 /* let weight = prompt("Какой у вас вес?")
-let recommendation ="";
+const recommendation ="";
 if(weight < 4) console.log(recommendation = "Пора перекусить");
 if(weight <= 5.5) console.log(recommendation = "Вес в норме");
 else console.log(recommendation = "Пора на тренировку");
@@ -71,7 +71,7 @@ console.log(finalGrade(gradExam, numberProject)); */
 
 //---Практика 9
 /* function multiplying(arr){
-let result = arr.reduce((prev,current)=> prev*current);
+const result = arr.reduce((prev,current)=> prev*current);
 return result;
 }
 console.log(multiplying([1,2,3,4,5,6])); */
@@ -85,7 +85,7 @@ console.log(checkName(['Никита', 'Саша', 'Анастасия', 'Дим
 
 //---Практика 11
 /* function substraction(arr1, arr2){
-let result
+const result
 return result = arr1.reduce((a,b)=> a * b) - arr2.reduce((a,b)=> a * b);
 }
 console.log(substraction([3, 2, 5], [1, 4, 4])); */
@@ -140,8 +140,8 @@ function returnText(str, number){
    */
   //---Практика 17
 /*   function divisibleByThree(str){
-      let arr = str.split("")
-      let summNumString = arr.reduce((a,b)=> a + b);
+      const arr = str.split("")
+      const summNumString = arr.reduce((a,b)=> a + b);
 if(Number.isInteger(summNumString/3))  return true;
 else return false;
   }
@@ -149,19 +149,15 @@ else return false;
   console.log(divisibleByThree('88')) */
 
   //---Практика 18
-/* function spacey(arr){
-    let result = []
-    while(arr.length > 0){
-        result.
-
-    }
-/* 
-    for(let i= 0 ; i<arr.length; i++){
-result.push(arr[i]+ arr[i+1] + arr[i+2]) */
-    
-/*     return result 
-}
-  console.log(spacey(['kevin', 'has','no','space'])) */
+/*   function spacey (arr){
+    const result=[];
+    result.push(arr[0]);
+    result.push(arr[0]+arr[1]);
+    result.push(arr[0]+arr[1]+arr[2]);
+    result.push(arr[0]+arr[1]+arr[2]+arr[3]);
+   return result;
+  }
+console.log(spacey(['kevin', 'has','no','space'])) */
 
   //---Практика 19
 /* function evensAndOdds(number){
@@ -171,4 +167,26 @@ result.push(arr[i]+ arr[i+1] + arr[i+2]) */
   console.log(evensAndOdds(13)) */
 
   //---Практика 20
+  /* function sort (arr){
+    const number = [];
+    const boolean = [];
+    const string = [];
+   for(let i=0; i<arr.length; i++){
+   if(typeof(arr[i])==="number") number.push(arr[i]);
+   if(typeof(arr[i])==="boolean") boolean.push(arr[i]);
+   if(typeof(arr[i]) === "string") string.push(arr[i]);
+   }
+   let obj ={}
+   obj.number = number;
+   obj.boolean = boolean;
+   obj.string = string;
+   return obj;
+   }
+console.log(sort(["a", 1, 2, 5, false, 'b', "c", true])) */
 
+//---Практика 21
+/* function switcheroo(str){
+  const chars = {'a':'b','b':'a'};
+return str.replace(/[ab]/g, m=>chars[m]);
+}
+console.log(switcheroo('aabacbaa')) */
